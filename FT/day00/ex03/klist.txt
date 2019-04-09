@@ -1,0 +1,5 @@
+Credentials cache: API:6E20C0A5-F964-4ADD-87F2-E1E1D19BBC07
+        Principal: alemayer@42.FR
+
+  Issued                Expires               Principal
+Jul  2 16:36:58 2018  Jul  9 16:36:58 2018  krbtgt/42.FR@42.FR
