@@ -17,6 +17,8 @@ void    my_putstr(char *str)
 
 int     main()
 {
-    my_putstr("hello world");
+    char *str = "hello world";
+    char *str2 = str;
+    my_putstr(str2);
     return(0);
 }

@@ -44,6 +44,7 @@ int     main(int argc, char **argv)  //on initialise le main
     int try = 1;                     //le nombre de coups (init à un)
     int MAX = 0;                     //le max sera définit plus tard par le joueur
     int MIN = 1;                     //pas besoin de le changer
+    char printScore = 'N';           //affichage du tableau des scores        
     char anotherGame = 'Y';          //le statut du jeu est en mode ouvert
 
     printf("1 ou 2 joueurs?\n\n");

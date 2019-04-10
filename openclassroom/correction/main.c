@@ -59,7 +59,7 @@ int main(){
 }
 
 int main_clear(){
-    system("cls");
+system("cmd /c cls");
     printf("==================== LE PLUS OU MOINS ====================\r\n");
     return 0;
 }

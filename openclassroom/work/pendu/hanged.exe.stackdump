@@ -1,0 +1,7 @@
+Exception: STATUS_ACCESS_VIOLATION at eip=6114FCDA
+eax=00000000 ebx=0061CC48 ecx=00000001 edx=00000004 esi=0061B88C edi=6119FD30
+ebp=00000000 esp=0061B6D0 program=C:\C-learning\openclassroom\work\pendu\hanged.exe, pid 20240, thread main
+cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
+Stack trace:
+Frame     Function  Args
+End of stack trace
