@@ -129,7 +129,7 @@ int     my_strCmp(char *str1, char *str2,)
     return (boolean);
 }
 
-void    newGame()
+void    newGame()/****** NEED ENCORE DU TAFF SUR CETTE FONCTION ******/
 {
     char *mysteryWord = "ROUGE";    //on test avec le mot rouge
     char *guessWord = NULL;         //on init la string de test à null
@@ -149,7 +149,7 @@ void    newGame()
 printf("------------ %s         -------------", guessWord);
 printf("------------ %s         -------------", mysteryWord);
 
-    while (guessWord != mysteryWord)
+    while (my_strCmp(guessWord, mysteryWord) != 1)
     {
         printf("\r\n  quel est le mot ?  ");
         printf("%s\r\n", guessWord);
@@ -158,11 +158,6 @@ printf("------------ %s         -------------", mysteryWord);
 
         guessWord = findLetter(mysteryWord, guessWord, c);
 
-        if (my_strCmp(guessWord, mysteryWord) == 1)         //taff actuel
-        {
-            printf("\r\n  Bien joué !\r\n");
-            printf(guessWord);
-        }
         else
         {
             try--;
@@ -176,6 +171,12 @@ printf("------------ %s         -------------", mysteryWord);
                 printf("\r\n  WRONG MA BOY ! il ne vous reste plus que %d essaie(s)\r\n", try);
         }
     }
+        if (my_strCmp(guessWord, mysteryWord) == 1)
+        {
+            printf("\r\n  Vous avez gagné !\r\n");
+            printf(guessWord);
+            break;
+        }
 
     free(guessWord);
 }

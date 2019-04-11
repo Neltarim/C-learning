@@ -1,24 +1,14 @@
 #include <unistd.h>
-
-int    my_putchar(char c)
-{
-    write(1, &c, 1);
-}
-
-void    my_putstr(char *str)
-{
-    int index = 0;
-    while(str[index])
-    {
-        my_putchar(str[index]);
-        index++;
-    }
-}
+#include <stdlib.h>
+#include <stdio.h>
 
 int     main()
 {
-    char *str = "hello world";
-    char *str2 = str;
-    my_putstr(str2);
+    char ville[100];
+
+    printf("Dans quelle ville habitez vous? ");
+    scanf("%s", ville);
+    printf("\nVous habitez %s, je vois ! \n", ville);
+
     return(0);
 }
